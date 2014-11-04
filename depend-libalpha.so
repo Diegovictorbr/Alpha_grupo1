@@ -1,0 +1,9 @@
+main.o: alpha_src/main.cpp alpha_src/Cifrador.h alpha_src/Utils.h \
+  alpha_src/Decifrador.h
+Alpha.o: alpha_src/Alpha.cpp alpha_src/Alpha.h
+Cifrador.o: alpha_src/Cifrador.cpp alpha_src/Alpha.h alpha_src/Cifrador.h \
+  alpha_src/Utils.h alpha_src/Aleatorizacao.h
+Decifrador.o: alpha_src/Decifrador.cpp alpha_src/Decifrador.h \
+  alpha_src/Utils.h alpha_src/Alpha.h
+Aleatorizacao.o: alpha_src/Aleatorizacao.cpp alpha_src/Aleatorizacao.h
+Utils.o: alpha_src/Utils.cpp alpha_src/Utils.h
